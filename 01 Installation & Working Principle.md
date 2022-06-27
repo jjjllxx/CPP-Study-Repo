@@ -41,10 +41,11 @@ int main() {
     std::cin.get();
 }
 ```
+
 ## How C++ Compiler Works
 Stage of compilation
 1. Preprocessing: include, define, if, ifdef, pragma.  
-include: just copy the headfile. 
+include: just copy the headfile and put into where the include statement is. 
 Example: A head file named as EndBrace.h. It just includes a end brace.
 ``` cpp
 }
@@ -55,6 +56,7 @@ int Multiply(int a, int b){
     return result;
 #include "EndBrace.h"
 ```
+
 define: replace the former with latter
 ``` cpp
 #define INTEGER int
@@ -74,3 +76,4 @@ int Multiply(int a, int b){
 ```
 	
 ## How C++ linker Works
+Linking: find every symbol and function, link them together.
