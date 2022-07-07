@@ -77,3 +77,61 @@ Used with loops
 2. break: end the loop. Also used in switch.  
 3. return: exit the function.
 
+# pointer
+example
+``` cpp
+#include <iostream>
+
+#define LOG(x) std::cout << x << std::endl
+
+int main() {
+    char* buffer = new char[8];
+    // allocate an 8-byte memory, buffer is a pointer that points to the beginning of the memory
+    memset(buffer, 0, 8); // 3 parameter: a pointer, a value, a size.
+    char** ptr = &buffer; // pointer to pointer
+    delete[] buffer; //
+    std::cin.get();
+}
+```
+
+# reference
+The result of the following example is 2.
+``` cpp
+#include <iostream>
+
+#define LOG(x) std::cout << x << std::endl
+
+int main() {
+    int a = 5;
+    int& ref = a;
+    ref = 2;
+    LOG(ref);
+}
+```
+Pass the reference of variables that will influence the variable.
+1. use pointer: result 6
+``` cpp
+#include <iostream>
+#define LOG(x) std::cout << x << std::endl
+void Increment(int* value) {
+    (*value)++;
+}
+int main() {
+    int a = 5;
+    Increment(&a);
+    LOG(a);
+}
+```
+2. use reference(syntax sugar): result 6
+``` cpp
+#include <iostream>
+#define LOG(x) std::cout << x << std::endl
+void Increment(int& value) {
+    value++;
+}
+int main() {
+    int a = 5;
+    Increment(a);
+    LOG(a);
+}
+```
