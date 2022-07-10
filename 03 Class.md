@@ -33,3 +33,6 @@ struct Vec2 {
 Use class in inheritance.
 
 # How to write a C++ class
+``` cpp
+
+```
