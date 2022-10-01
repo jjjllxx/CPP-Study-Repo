@@ -2,7 +2,8 @@
 ``` cpp
 #include <iostream>
 
-int main() {
+int main() 
+{
     int variable = 8;
     std::cout << variable << std::endl;
     variable = 20;
@@ -41,13 +42,18 @@ The following code will print hello!.
 ``` cpp
 #include <iostream>
 
-int main() {
+int main() 
+{
     const char* ptr = "hello!";
     // const char* ptr = nullptr;
     if (ptr)
+    {
         std::cout << ptr << std::endl;
+    }   
     else
+    {
         std::cout << "ptr is null!" <<std::endl;
+    }  
 }
 ```
 
@@ -56,13 +62,16 @@ for loops and while loops
 ``` cpp
 #include <iostream>
 
-int main() {
-    for (int i = 0; i < 5; i++){
+int main() 
+{
+    for (int i = 0; i < 5; i++)
+    {
         std::cout << "Hello world!" << std::endl;
     }
     int i = 0;
     std::cout << "======================" << std::endl;
-    while (i < 5) {
+    while (i < 5)
+    {
         std::cout << "Hello world!" << std::endl;
         i++;
     }
@@ -84,7 +93,8 @@ example
 
 #define LOG(x) std::cout << x << std::endl
 
-int main() {
+int main() 
+{
     char* buffer = new char[8];
     // allocate an 8-byte memory, buffer is a pointer that points to the beginning of the memory
     memset(buffer, 0, 8); // 3 parameter: a pointer, a value, a size.
@@ -101,7 +111,8 @@ The result of the following example is 2.
 
 #define LOG(x) std::cout << x << std::endl
 
-int main() {
+int main() 
+{
     int a = 5;
     int& ref = a;
     ref = 2;
@@ -113,10 +124,12 @@ Pass the reference of variables that will influence the variable.
 ``` cpp
 #include <iostream>
 #define LOG(x) std::cout << x << std::endl
-void Increment(int* value) {
+void Increment(int* value) 
+{
     (*value)++;
 }
-int main() {
+int main() 
+{
     int a = 5;
     Increment(&a);
     LOG(a);
@@ -126,10 +139,12 @@ int main() {
 ``` cpp
 #include <iostream>
 #define LOG(x) std::cout << x << std::endl
-void Increment(int& value) {
+void Increment(int& value)
+{
     value++;
 }
-int main() {
+int main() 
+{
     int a = 5;
     Increment(a);
     LOG(a);
