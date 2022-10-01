@@ -6,7 +6,8 @@ In main.cpp
 ``` cpp
 #include <iostream>
 
-int main() {
+int main() 
+{
     std::cout << "Hello World!!" << std::endl;
     std::cin.get();
 }
@@ -27,7 +28,8 @@ For each .cpp file, compiler will generate repective .obj file and the linker wi
 ``` cpp
 #include <iostream>
 
-void Log(const char* message){
+void Log(const char* message)
+{
     std::cout << message << std::endl;
 }
 ```
@@ -51,7 +53,8 @@ Example: A head file named as EndBrace.h. It just includes a end brace.
 }
 ```
 ``` cpp
-int Multiply(int a, int b){
+int Multiply(int a, int b)
+{
     int result = a * b;
     return result;
 #include "EndBrace.h"
@@ -60,7 +63,8 @@ int Multiply(int a, int b){
 define: replace the former with latter
 ``` cpp
 #define INTEGER int
-INTEGER Multiply(int a, int b){
+INTEGER Multiply(int a, int b)
+{
     INTEGER result = a * b;
     return result;
 }
@@ -68,7 +72,8 @@ INTEGER Multiply(int a, int b){
 if/endif: if satisfy the condition, the code between if and endif will be included.
 ``` cpp
 #if 1
-int Multiply(int a, int b){
+int Multiply(int a, int b)
+{
     int result = a * b;
     return result;
 }
