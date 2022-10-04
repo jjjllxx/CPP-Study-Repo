@@ -209,3 +209,81 @@ int main()
 ```
 
 #  enumeration
+By default, A equals 0, B equals 1, C equals 2.
+``` cpp
+enum Example
+{
+    A,
+    B,
+    C
+};
+
+int main()
+{
+    Example value = A;
+}
+```
+
+A equals 5, B equals 6, C equals 7.
+``` cpp
+enum Example
+{
+    A = 5,
+    B,
+    C
+};
+```
+
+Can also be assigned with value.
+``` cpp
+enum Example
+{
+    A = 5,
+    B = 1,
+    C = 2
+};
+```
+
+enum can be a certain type of integer.
+``` cpp
+enum Example : unsigned char
+{
+    A = 5,
+    B = 1,
+    C = 2
+}
+```
+
+# constructor
+Example:
+```
+class Entity
+{
+public:
+    float X, Y;
+
+    Entity()
+    {
+
+    }
+
+    Entity(float x, float y)
+    {
+      X = x;
+      Y = y;
+    }
+    void print() 
+    { 
+      std::cout << X << ',' << Y << std::endl; 
+    }
+};
+
+int main() 
+{
+    Entity e(10.0f, 5.0f);
+    e.print();
+}
+```
+
+# Destructor
+
