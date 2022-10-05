@@ -286,4 +286,43 @@ int main()
 ```
 
 # Destructor
+Destructor applies to both stack and heap allocate objects. Prevent memory leakage.
+For heap, destructor is called when delete.  
+For stack, destructor is called at the end of scope.  
+``` cpp
+class Entity
+{
+public:
+    float X, Y;
+
+    Entity()
+    {
+        X = 0.0f;
+        Y = 0.0f;
+        std::cout << "Created Entity!" << std::endl;
+    }
+
+    ~Entity()
+    {
+        std::cout << "Destroyed Entity!" << std::endl;
+    }
+
+    void print() 
+    { 
+        std::cout << X << ',' << Y << std::endl; 
+    }
+};
+
+void Function()
+{
+    Entity e;
+    e.print();
+}
+
+int main() 
+{
+    Function();
+}
+```
+
 
