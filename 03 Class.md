@@ -325,4 +325,40 @@ int main()
 }
 ```
 
+# inheritance
+
+``` cpp
+class Entity
+{
+public:
+    float X, Y;
+
+    Entity()
+    {
+        X = 0.0f;
+        Y = 0.0f;
+    }
+
+    void move(float ax, float ay) 
+    { 
+        X += ax;
+        Y += ay;
+    }
+};
+
+class Player : public Entity
+{
+public:
+    const char* name;
+
+    void printName()
+    {
+        std::cout << name << std::endl;
+    }
+};
+```
+
+# virtual functions
+B class derived from A calss, a function in A is marked as virtual, then can override this method in B class.
+
 
