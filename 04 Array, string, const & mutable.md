@@ -21,4 +21,18 @@ int main()
 ```
 
 ``` cpp
+int example[5]; // created on stack, will be destroyed at the end of main function.
+int* another = new int[5]; // created on heap, will be alive until destroy it manually.
+
+delete [] another;
 ```
+
+memory indirection: pointer points to another block of memory which holds actual array. May cause memory fragmentation and cache miss.   
+create array on stack to prevent pointer jumping around memory.   
+In C++ 11, there is std::array.
+
+size -> byte
+count -> number
+
+# string
+
