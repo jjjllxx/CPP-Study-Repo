@@ -31,8 +31,8 @@ memory indirection: pointer points to another block of memory which holds actual
 create array on stack to prevent pointer jumping around memory.   
 In C++ 11, there is std::array.
 
-size -> byte
+size -> byte   
 count -> number
 
-# string
+# String
 
