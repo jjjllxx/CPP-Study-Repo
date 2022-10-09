@@ -437,3 +437,13 @@ public:
     }
 };
 ```
+
+Every sub class of a base class with pure virtual function must have implementation of that pure virtual function.
+
+# Visibility
+For class, the default visibility is private.
+For struct, the default visibility is public.
+
+1. private: only visible inside class and to friend class.
+2. protected: also visiblt to all sub classes along the hierarchy.
+3. private: visible to all.
