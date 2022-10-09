@@ -359,6 +359,81 @@ public:
 ```
 
 # virtual functions
-B class derived from A calss, a function in A is marked as virtual, then can override this method in B class.
+B class derived from A calss, a function in A is marked as virtual, then can override this method in B class.  
+Virtual function introduces *dynamic dispatch*, compiles by V-table.  
+V-table contains all the virtual function inside base class, can map them to the correct override function at runtime.   
+If want to override a function, must mark the function in the base class as virtual.   
 
+``` cpp
+class Entity
+{
+public:
+    virtual std::string getName()
+    {
+        return "Entity";
+    }
+};
 
+class Player : public Entity
+{
+private:
+    std::string name;
+public:
+    Player(const std::string name) :
+        name(name)
+    {
+    }
+
+    std::string getName() override
+    { 
+        return name; 
+    }
+};
+
+void printName(Entity& en) 
+{ 
+    std::cout << en.getName() << std::endl; 
+}
+
+int main() 
+{
+    Player p("abc");
+    Entity e;
+
+    printName(p);
+    printName(e);
+}
+```
+Try the code with or without **virtual** and **override** keyword.  
+override keyword is not necessary, but add readability. override began in C++11.
+
+virtual function is not free:
+1.  Additional memory to store v-table, to dispatch correct function. Base class need an extra member pointer, poointing the v-table.
+2.  Every time call the virtual function, need go through the whole table to decide which function to map to (additional performance penalty).
+
+# Pure virtual function(interface)
+Pure virtual function allows to define a function without implementation in base class and force sub class to implement that function.
+
+``` cpp
+class Entity
+{
+public:
+    virtual std::string getName() = 0;
+};
+
+class Player : public Entity
+{
+private:
+    std::string name;
+public:
+    Player(const std::string name) :
+        name(name)
+    {
+    }
+
+    std::string getName() override
+    { 
+        return name; 
+    }
+};
+```
