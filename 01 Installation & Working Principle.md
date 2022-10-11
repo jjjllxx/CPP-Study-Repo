@@ -1,6 +1,4 @@
-# Installation
-
-## Mac
+# Installation on Mac
 Download Xcode -> create a new Xcode project -> name and save the project(choose C++ as language)
 In main.cpp
 ``` cpp
@@ -13,9 +11,8 @@ int main()
 }
 ```
 Product(on the top) -> build(to compile) -> run
-# Working Principle
 
-## How C++ Works
+# How C++ Works
 #include <iostream>: statement after # means preprocess statement, happens before compilation.  
 main() function: the entrance of application.  
 Head files do not get complied, they get included in preprocess.   
@@ -44,7 +41,7 @@ int main() {
 }
 ```
 
-## How C++ Compiler Works
+# How C++ Compiler Works
 Stage of compilation
 1. Preprocessing: include, define, if, ifdef, pragma.  
 include: just copy the headfile and put into where the include statement is. 
@@ -80,5 +77,5 @@ int Multiply(int a, int b)
 #endif
 ```
 	
-## How C++ linker Works
+# How C++ linker Works
 Linking: find every symbol and function, link them together.
