@@ -36,7 +36,7 @@ C standard library: usually has .h suffix. C++ does not.
 # Debugging
 set break points
 
-# if statement
+# If Statement
 Conditions or branches will affect performance. Using mathmatical calculation instead of comparison.   
 The following code will print hello!. 
 ``` cpp
@@ -57,7 +57,7 @@ int main()
 }
 ```
 
-# loops
+# Loops
 for loops and while loops
 ``` cpp
 #include <iostream>
@@ -80,13 +80,13 @@ int main()
 ```
 do while: code in loop will be run at least once.
 
-# control statement
+# Control Statement
 Used with loops
 1. continue: go to the next iteration of the loop. 
 2. break: end the loop. Also used in switch.  
 3. return: exit the function.
 
-# pointer
+# Pointer
 example
 ``` cpp
 #include <iostream>
@@ -104,7 +104,7 @@ int main()
 }
 ```
 
-# reference
+# Reference
 The result of the following example is 2.
 ``` cpp
 #include <iostream>
