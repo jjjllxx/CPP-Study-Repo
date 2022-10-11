@@ -97,3 +97,75 @@ Entity* entity2 = new Entity(5, "abc");
 2. have to manually free that memory.
 
 # new keyword
+Free list: maintain the address with free bytes.
+Must use delete after new.
+``` cpp
+Entity* e1 = new Entity;  // allocate memory & get a pointer & call the constructor
+Entity* e2 = (Entity*)malloc(sizeof(Entity));  // only allocate memory and get a pointer to that address(not recommended)
+
+delete[] b;  // for a pointer to an array, delete should be followed with []
+delete e1;
+delete e2;
+```
+
+# Implict conversion and explicit keyword
+Example of implicit conversion/construction
+``` cpp
+class Entity
+{
+private:
+    std::string name;
+    int age;
+public:
+    Entity(const std::string& name) :
+        name(name),
+        age(-1)
+    {
+    }
+    
+    Entity(const int age) :
+        name("unknown"),
+        age(age)
+    {
+    }
+
+    int getAge() const
+    {
+        return age;
+    }
+};
+
+void printEntity(const Entity& e)
+{
+    std::cout << e.getAge() << std::endl;
+}
+
+int main() 
+{
+    Entity a = std::string("abc");  // Entity a("abc");
+    Entity b = 24;  // Entity b(24);
+
+    printEntity(22);  // output 22
+    printEntity(std::string("aaa"));  // output -1
+}
+```
+
+explicit keyword: disable implicit conversion.
+
+``` cpp
+explicit Entity(const std::string& name) :
+        name(name),
+        age(-1)
+    {
+    }
+
+explicit Entity(const int age) :
+    name("unknown"),
+    age(age)
+{
+}
+```
+
+For low level wrapper, explicit can prevent accidental casting.
+
+# Operator and Operator overloading
