@@ -39,7 +39,7 @@ struct Vec2
 ```
 Use class in inheritance.
 
-# How to Write a C++ class
+# How to Write a C++ Class
 ``` cpp
 #include <iostream>
 
