@@ -22,7 +22,7 @@ int main() {
 }
 ```
 
-# Comparison of class and struct
+# Comparison of Class and Struct
 Struct in C++: maintain the compatibility with C.   
 An example of struct in Plain Old Data(POD)
 ``` cpp
@@ -39,7 +39,7 @@ struct Vec2
 ```
 Use class in inheritance.
 
-# How to write a C++ class
+# How to Write a C++ class
 ``` cpp
 #include <iostream>
 
@@ -88,7 +88,7 @@ int main()
 }
 ```
 
-# static in C++
+# Static Keyword
 
 1. static outside of struct/class: The linkage of the symbol that declared as static is internal, only visible to the defined translation unit.
 2. static inside of struct/class: This variable shares memory with all of the instances of the class. Basically, across all the created instances of struct/class, only one instance of that static variable.
@@ -100,7 +100,7 @@ C++ cannot have two global variables with the same name. Solutions:
 
 For solution 3, if a variable is defined as static, then it cannot be found by extern variable.
 
-# static inside of class/struct
+# Static Inside of Class/Struct
 
 For the following code, get **unresolved external symbols** error if x, y are stated as static.
 ``` cpp
@@ -165,7 +165,7 @@ int main()
 static method cannot access non-static variable. (illegal reference to non-static member)
 Reason: static method does not have a class instance.
 
-# static in local scope
+# Static in Local Scope
 When defining a variable, consider
 1. Lifetime: how long will it remain in memory before being deleted.
 2. Scope: where can access that variable.
@@ -208,7 +208,7 @@ int main()
 }
 ```
 
-#  enumeration
+#  Enumeration
 By default, A equals 0, B equals 1, C equals 2.
 ``` cpp
 enum Example
@@ -254,7 +254,7 @@ enum Example : unsigned char
 }
 ```
 
-# constructor
+# Constructor
 Example:
 ```
 class Entity
@@ -325,7 +325,7 @@ int main()
 }
 ```
 
-# inheritance
+# Inheritance
 
 ``` cpp
 class Entity
@@ -358,7 +358,7 @@ public:
 };
 ```
 
-# virtual functions
+# Virtual Functions
 B class derived from A calss, a function in A is marked as virtual, then can override this method in B class.  
 Virtual function introduces *dynamic dispatch*, compiles by V-table.  
 V-table contains all the virtual function inside base class, can map them to the correct override function at runtime.   
