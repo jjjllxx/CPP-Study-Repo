@@ -411,7 +411,7 @@ virtual function is not free:
 1.  Additional memory to store v-table, to dispatch correct function. Base class need an extra member pointer, poointing the v-table.
 2.  Every time call the virtual function, need go through the whole table to decide which function to map to (additional performance penalty).
 
-# Pure virtual function(interface)
+# Pure Virtual Function(Interface)
 Pure virtual function allows to define a function without implementation in base class and force sub class to implement that function.
 
 ``` cpp
