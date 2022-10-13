@@ -99,3 +99,113 @@ int main()
 weak_ptr: when copying a shared_ptr, it will not add reference count.
     
 # Copy and Copy Constructor
+Copy: copy data/memory.
+
+The following program will crash.
+Two String has the exact same char* pointer, pointing to the same memory address.
+When the scope ends and the destructor is called, trying to free the same memory block twice.
+
+``` cpp
+class String
+{
+private:
+    char* buffer;
+    std::size_t size;
+public:
+    String(const char* string)
+    {
+        size = strlen(string);
+        buffer = new char[size + 1]; // to copy the ultimation character
+        memcpy(buffer, string, size + 1);
+    }
+    
+    ~String()
+    {
+        delete [] buffer;
+    }
+    
+    char& operator[](const std::size_t idx)
+    {
+        return buffer[idx];
+    }
+    
+    // set function as friend function, then it can call private member/method
+    friend std::ostream& operator<<(std::ostream& stream, const String& string);
+};
+
+std::ostream& operator<<(std::ostream& stream, const String& string)
+{
+    stream << string.buffer;
+    return stream;
+}
+
+int main()
+{
+    String string("abcabc");
+    String second = string;  // shallow copy
+    
+    second[2] = 'e'; // will change both string and second
+    
+    std::cout << string << std::endl;
+    std::cout << second << std::endl; 
+}
+```
+
+copy constructor: will be called when copying(for same type)
+``` cpp
+class String
+{
+private:
+    char* buffer;
+    std::size_t size;
+public:
+    String(const char* string)
+    {
+        size = strlen(string);
+        buffer = new char[size + 1]; // to copy the ultimation character
+        memcpy(buffer, string, size + 1);
+    }
+    
+    String(const String& other) :
+        size(other.size)
+    {
+        buffer = new char[size + 1];
+        memcpy(buffer, other.buffer, size + 1);
+    }
+    
+    ~String()
+    {
+        delete [] buffer;
+    }
+    // set function as friend function, then it can call private member/method
+    char& operator[](const std::size_t idx)
+    {
+        return buffer[idx];
+    }
+    
+    friend std::ostream& operator<<(std::ostream& stream, const String& string);
+};
+
+
+
+std::ostream& operator<<(std::ostream& stream, const String& string)
+{
+    stream << string.buffer;
+    return stream;
+}
+
+int main()
+{
+    String string("abcabc");
+    String second = string;  // deep copy
+    
+    second[2] = 'e'; // will only change second
+    
+    std::cout << string << std::endl;
+    std::cout << second << std::endl;
+}
+// will not crash
+```
+Always pass parameter by const reference
+    
+# Array Operator
