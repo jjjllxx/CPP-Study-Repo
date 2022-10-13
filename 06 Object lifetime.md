@@ -209,3 +209,98 @@ int main()
 Always pass parameter by const reference
     
 # Array Operator
+``` cpp
+class Entity
+{
+private:
+    int x;
+public:
+    void print()
+    {
+        std::cout << "Hello!" <<std::endl;
+    }
+};
+
+class ScopePtr
+{
+private:
+    Entity* obj;
+public:
+    ScopePtr(Entity*  entity) :
+        obj(entity)
+    {
+    }
+    
+    ~ScopePtr()
+    {
+        delete obj;
+    }
+    
+    // overload -> operator
+    Entity* operator->()
+    {
+        return obj;
+    }
+};
+
+int main()
+{
+    ScopePtr entity = new Entity;
+    
+    entity->print();
+}
+```
+
+calculate offset in the memory
+
+``` cpp
+struct Vector3
+{
+    float x, y, z;
+};
+
+int main()
+{
+    int offsetX = (int)&((Vector3*)nullptr)->x; // get 0;
+    int offsetY = (int)&((Vector3*)nullptr)->y; // get 4;
+    int offsetZ = (int)&((Vector3*)nullptr)->z; // get 8;
+}
+```
+
+# Dynamic arrays
+standard template library(STL): containers
+``` cpp
+#include <iostream>
+#include <vector>  // need include vector lib
+
+struct Vertex
+{
+    float x, y, z;
+};
+
+std::ostream& operator<<(std::ostream& stream, const Vertex& vertex)
+{
+    stream << vertex.x << ", " << vertex.y << ", " << vertex.z;
+    return stream;
+}
+
+int main()
+{
+    std::vector<Vertex> vertices;
+    vertices.push_back({1, 2, 3});
+    vertices.push_back({4, 5, 6});
+    
+    vertices.size();  // get the number of elements
+    
+    for (Vertex& v : vertices)
+    {
+        std::cout << v << std::endl;
+    }
+    
+    vertices.erase(vertices.begin() + 1); // remove the second element
+    vertices.clear(); // remove all the elements in vector
+}
+```
+Remember always pass by reference when passing into a function.
+
+# Use Vector in an optimal way
