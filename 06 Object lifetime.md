@@ -304,3 +304,55 @@ int main()
 Remember always pass by reference when passing into a function.
 
 # Use Vector in an optimal way
+
+``` cpp
+struct Vertex
+{
+    float x, y, z;
+    
+    Vertex(const float x, const float y, const float z) :
+        x(x),
+        y(y),
+        z(z)
+    {
+    }
+    
+    Vertex(const Vertex& vertex) :
+        x(vertex.x),
+        y(vertex.y),
+        z(vertex.z)
+    {
+        std::cout << "Copied!" << std::endl;
+    }
+};
+
+int main()
+{
+    std::vector<Vertex> vertices;
+    vertices.reserve(3);
+    
+    vertices.emplace_back(1, 2, 3);
+    vertices.emplace_back(4, 5, 6);
+    vertices.emplace_back(7, 8, 9);
+    
+//    vertices.push_back(Vertex(1, 2, 3));
+//    vertices.push_back(Vertex(4, 5, 6));
+//    vertices.push_back(Vertex(7, 8, 9));
+}
+```
+copy times: 
+||without reverse| with reverse|
+|----|----|----|
+|push_back| 6 | 3|
+|emplace_back| 3|0|
+
+# Use External Libraries (Static Link)
+32 bit binary file or 64 bit binary file: not related with the computer system, but the file you are going to make (must match).   
+static linking: library will be put in .exe files  
+dynamic linking: link at runtime, still some linkage can be loaded on the fly(loadLibrary function).  
+	
+To include file,
+<> : for external lib   
+"" : check relative path first, use it for files in project 
+	
+# Dynamic Linkage
