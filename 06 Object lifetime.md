@@ -347,12 +347,16 @@ copy times:
 |emplace_back| 3|0|
 
 # Use External Libraries (Static Link)
-32 bit binary file or 64 bit binary file: not related with the computer system, but the file you are going to make (must match).   
-static linking: library will be put in .exe files  
-dynamic linking: link at runtime, still some linkage can be loaded on the fly(loadLibrary function).  
+32 bit binary file or 64 bit binary file: not related with the computer system, but the file you are going to make (must match).      
+static linking: library will be put in .exe files， happen when compiling.   
+dynamic linking: link at runtime, still some linkage can be loaded on the fly(loadLibrary function).    
 	
-To include file,
+To include file,   
 <> : for external lib   
-"" : check relative path first, use it for files in project 
+"" : check relative path first, use it for files in project   
 	
 # Dynamic Linkage
+
+# Create and Use Libraries
+1. Create two projects under one solution(.sln).
+2. One is set as application, another is set as static library.
