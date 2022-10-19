@@ -2,13 +2,13 @@
 C++ study repo.
 
 # Content
-Chapter 01 Installation & Working Principle
+## Chapter 01 Installation & Working Principle
 1. [Installation on Mac](https://github.com/JinLexuan/CPP-study-repo/blob/main/01%20Installation%20%26%20Working%20Principle.md#installation-on-mac)
 2. [How C++ Works](https://github.com/JinLexuan/CPP-study-repo/blob/main/01%20Installation%20%26%20Working%20Principle.md#how-c-works)
 3. [How C++ Compiler Works](https://github.com/JinLexuan/CPP-study-repo/blob/main/01%20Installation%20%26%20Working%20Principle.md#how-c-compiler-works)
 4. [How C++ linker Works](https://github.com/JinLexuan/CPP-study-repo/blob/main/01%20Installation%20%26%20Working%20Principle.md#how-c-linker-works)
 
-Chapter 02 Basic Syntax
+## Chapter 02 Basic Syntax
 1. [Variable](https://github.com/JinLexuan/CPP-study-repo/blob/main/02%20Basic%20Syntax.md#variable)
 2. [Function](https://github.com/JinLexuan/CPP-study-repo/blob/main/02%20Basic%20Syntax.md#function)
 3. [Head File](https://github.com/JinLexuan/CPP-study-repo/blob/main/02%20Basic%20Syntax.md#head-file)
@@ -19,7 +19,7 @@ Chapter 02 Basic Syntax
 8. [Pointer](https://github.com/JinLexuan/CPP-study-repo/blob/main/02%20Basic%20Syntax.md#pointer)
 9. [Reference](https://github.com/JinLexuan/CPP-study-repo/blob/main/02%20Basic%20Syntax.md#reference)
 
-Chapter 03 Class
+## Chapter 03 Class
 1. [Class](https://github.com/JinLexuan/CPP-study-repo/blob/main/03%20Class.md#class)
 2. [Comparison of Class and Struct](https://github.com/JinLexuan/CPP-study-repo/blob/main/03%20Class.md#comparison-of-class-and-struct)
 3. [How to Write a C++ Class](https://github.com/JinLexuan/CPP-study-repo/blob/main/03%20Class.md#how-to-write-a-c-class)
@@ -34,9 +34,15 @@ Chapter 03 Class
 12. [Pure Virtual Function(Interface)](https://github.com/JinLexuan/CPP-study-repo/blob/main/03%20Class.md#pure-virtual-functioninterface)
 13. [Visibility](https://github.com/JinLexuan/CPP-study-repo/blob/main/03%20Class.md#visibility)
 
-Chapter 04
+## Chapter 04
+1. [Array](https://github.com/JinLexuan/CPP-study-repo/blob/main/04%20Array,%20string,%20const%20&%20mutable.md#array)
+2. [String](https://github.com/JinLexuan/CPP-study-repo/blob/main/04%20Array,%20string,%20const%20&%20mutable.md#string)
+3. [String Literal](https://github.com/JinLexuan/CPP-study-repo/blob/main/04%20Array,%20string,%20const%20&%20mutable.md#string-literal)
+4. [Const](https://github.com/JinLexuan/CPP-study-repo/blob/main/04%20Array,%20string,%20const%20&%20mutable.md#const)
+5. [Mutable](https://github.com/JinLexuan/CPP-study-repo/blob/main/04%20Array,%20string,%20const%20&%20mutable.md#mutable)
 
-Chapter 05
+## Chapter 05
 
-Chapter 06
+## Chapter 06
 
+## Chapter 07
