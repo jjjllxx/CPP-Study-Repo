@@ -52,7 +52,7 @@ int main()
 }
 ```
 
-# String literal
+# String Literal
 ``` cpp
 // p is a pointer, pointing to const area. 
 // Revising p[0] is revising const content, which is not allowed.
@@ -71,7 +71,7 @@ const char16_t* name3 = u"abc";  // 2 Bytes ->16 bits, utf16
 const char32_t* name4 = U"abc";  // 4 Bytes ->32 bits, utf32 
 ```
 
-# const
+# Const
 
 const and pointer:
 ``` cpp
@@ -113,7 +113,7 @@ void printEntity(const Entity& e)
 }
 ```
 
-# mutable
+# Mutable
 Variable marked as mutable can be modified in const method.
 
 ``` cpp
