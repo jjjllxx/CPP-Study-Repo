@@ -42,6 +42,13 @@ C++ study repo.
 5. [Mutable](https://github.com/JinLexuan/CPP-study-repo/blob/main/04%20Array,%20string,%20const%20&%20mutable.md#mutable)
 
 ## Chapter 05
+1. [Constructor Member Initialiser List](https://github.com/JinLexuan/CPP-study-repo/blob/main/05%20Constructor,%20Ternary%20operator,%20new,%20implicit%20conversion,%20operator%20overloading,%20this.md#constructor-member-initialiser-list)
+2. [Ternary Operator](https://github.com/JinLexuan/CPP-study-repo/blob/main/05%20Constructor,%20Ternary%20operator,%20new,%20implicit%20conversion,%20operator%20overloading,%20this.md#constructor-member-initialiser-list)
+3. [Create and Initialise Object](https://github.com/JinLexuan/CPP-study-repo/blob/main/05%20Constructor,%20Ternary%20operator,%20new,%20implicit%20conversion,%20operator%20overloading,%20this.md#constructor-member-initialiser-list)
+4. [New Keyword](https://github.com/JinLexuan/CPP-study-repo/blob/main/05%20Constructor,%20Ternary%20operator,%20new,%20implicit%20conversion,%20operator%20overloading,%20this.md#new-keyword)
+5. [Implict Conversion and Explicit Keyword](https://github.com/JinLexuan/CPP-study-repo/blob/main/05%20Constructor,%20Ternary%20operator,%20new,%20implicit%20conversion,%20operator%20overloading,%20this.md#implict-conversion-and-explicit-keyword)
+6. [Operator and Operator Overloading](https://github.com/JinLexuan/CPP-study-repo/blob/main/05%20Constructor,%20Ternary%20operator,%20new,%20implicit%20conversion,%20operator%20overloading,%20this.md#operator-and-operator-overloading)
+7. [This Keyword](https://github.com/JinLexuan/CPP-study-repo/blob/main/05%20Constructor,%20Ternary%20operator,%20new,%20implicit%20conversion,%20operator%20overloading,%20this.md#this-keyword)
 
 ## Chapter 06
 
