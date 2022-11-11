@@ -1,5 +1,5 @@
 # CPP-study-repo
-C++ study repo.
+C++ study repo. Learn from cherno. The course arrangement is relatively random. Please reter to the content for detailed topic.
 
 # Content
 ## Chapter 01 Installation & Working Principle
@@ -51,5 +51,21 @@ C++ study repo.
 7. [This Keyword](https://github.com/JinLexuan/CPP-study-repo/blob/main/05%20Constructor,%20Ternary%20operator,%20new,%20implicit%20conversion,%20operator%20overloading,%20this.md#this-keyword)
 
 ## Chapter 06
+1. [Object Lifetime](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#object-lifetime)  
+2. [Smart Pointer](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#smart-pointer)  
+3. [Copy and Copy Constructor](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#copy-and-copy-constructor)  
+4. [Array Operator](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#array-operator)  
+5. [Dynamic arrays](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#dynamic-arrays)  
+6. [Use Vector in an optimal way](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#use-vector-in-an-optimal-way)  
+7. [Use External Libraries (Static Link)](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#use-external-libraries-static-link)  
+8. [Dynamic Linkage](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#dynamic-linkage)  
+9. [Create and Use Libraries](https://github.com/JinLexuan/CPP-study-repo/blob/main/06%20Object%20lifetime.md#create-and-use-libraries)  
 
 ## Chapter 07
+1. [How to Deal with Multiple Return Types](https://github.com/JinLexuan/CPP-study-repo/blob/main/07.md#how-to-deal-with-multiple-return-types)  
+2. [Templates](https://github.com/JinLexuan/CPP-study-repo/blob/main/07.md#templates)  
+3. [Stack VS Heap](https://github.com/JinLexuan/CPP-study-repo/blob/main/07.md#stack-vs-heap)  
+4. [Macros](https://github.com/JinLexuan/CPP-study-repo/blob/main/07.md#macros)  
+5. [Auto(keyword)](https://github.com/JinLexuan/CPP-study-repo/blob/main/07.md#autokeyword)  
+
+## Chapter 08
