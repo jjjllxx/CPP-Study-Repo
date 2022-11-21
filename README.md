@@ -1,5 +1,7 @@
 # CPP-study-repo
-C++ study repo. Learn from cherno. The course arrangement is relatively random. Please reter to the content for detailed topic.
+C++ study repo. Learn from cherno in Youtube. The course arrangement is relatively random. Please reter to the content for detailed topic. The number in the bracket indicates the number of episode. Welcome comment and discuss. If the repo helps you, please give me a star, thank you!   
+
+C++ 学习仓库，包括YouTube博主cherno课程的笔记以及全部代码。课程的知识点安排较为随机， 请参考目录以获取对应内容。括号里的数字表示对应的视频序号。如有需要中文版本请留言或者create an issue. 欢迎交流与讨论，如有帮助请给我一个star，谢谢！
 
 # Content
 ## Chapter 01 Installation & Working Principle
