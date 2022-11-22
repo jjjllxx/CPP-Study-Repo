@@ -71,3 +71,42 @@ C++ 学习仓库，包括YouTube博主cherno课程的笔记以及全部代码。
 5. [Auto(keyword)](https://github.com/JinLexuan/CPP-study-repo/blob/main/07.md#autokeyword)  
 
 ## Chapter 08
+1. [Static Array](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#static-array)  
+2. [Function Pointer](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#function-pointer)
+3. [Lambda](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#lambda)  
+4. [Namespace std](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#namespace-std)
+5. [Namespace](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#namespace)
+6. [Thread](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#thread)
+7. [Timing](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#timing)   
+8. [Multi-dimensional array](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#multi-dimensional-array)  
+9. [Sorting](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#sorting)  
+10. [Type Punning](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#type-punning)
+11. [Union](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/08.md#type-punning)
+
+## Chapter 09
+1. [Virtual Destructor](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#virtual-destructor)
+2. [Casting](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#casting)
+3. [Break Points](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#break-points)
+4. [Precompiled Header](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#precompiled-header)
+5. [dynamic_cast](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#dynamic_cast)
+6. [Bench Marking](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#bench-marking)
+7. [Structured Bindings(C++ 17)](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#structured-bindingsc-17)
+8. [optional(C++ 17)](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#optionalc-17)
+9. [Store Multiple Data in A Single Variable(C++ 17)](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#store-multiple-data-in-a-single-variablec-17)
+10. [How to Store Any Type of data](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/09.md#how-to-store-any-type-of-data)
+
+## Chapter 10
+1. [Improve C++ Performance](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/10.md#improve-c-performance)
+2. [How to Make String Faster](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/10.md#how-to-make-string-faster)
+3. [Visualisation of Bench Marking](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/10.md#visualisation-of-bench-marking)
+4. [Singleton](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/10.md#singleton)
+5. [Small String Optimization(SSO)](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/10.md#small-string-optimizationsso)
+
+## Chapter 11
+1. [Tracking Memory Allocation](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/11.md#tracking-memory-allocation)
+2. [Lvalues and Rvalues](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/11.md#lvalues-and-rvalues)
+3. [Continous Integration](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/11.md#continous-integration)
+4. [Static Analysis](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/11.md#static-analysis)
+5. [Argument Evaluation Order](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/11.md#argument-evaluation-order)
+6. [Move Semantics](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/11.md#move-semantics)
+7. [Move Assignment Operator](https://github.com/JinLexuan/CPP-Study-Repo/blob/main/11.md#move-assignment-operator)
